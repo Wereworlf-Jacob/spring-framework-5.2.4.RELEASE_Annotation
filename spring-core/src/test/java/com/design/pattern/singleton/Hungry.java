@@ -1,12 +1,16 @@
 package com.design.pattern.singleton;
 
+import java.io.Serializable;
+
 /**
  * @ClassName Hungry
  * @Description 饿汉单例模式
  * @Author Jacob
  * @Date 2020/3/27 20:59
  */
-public class Hungry {
+public class Hungry implements Serializable {
+
+	private static final long serialVersionUID = -6112871971681011101L;
 
 	//类的内容加载顺序
 	//先静态，后动态
