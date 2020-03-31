@@ -19,7 +19,7 @@ public class LazyDoubleCheck {
 	//该方法近似完美地解决了问题，将代码同步块单独加载初始化上，仅消耗了一次初始化的资源
 	//这是一种在临界区代码加锁的方法
 	//除非lazy使用volatile关键字，保证先写后查，否则会出现一个线程拿到了初始化一半的实例
-	private static LazyDoubleCheck getInstance() {
+	public static LazyDoubleCheck getInstance() {
 		if (lazy == null) {
 			synchronized (LazyDoubleCheck.class) {
 				if (lazy == null) {

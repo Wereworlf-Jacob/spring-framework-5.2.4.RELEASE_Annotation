@@ -17,7 +17,7 @@ public class LazyThreadUnsale {
 
 	//静态获取实例的方法公有化
 	//在即将使用的时候，再创建类，但是有线程安全问题
-	public LazyThreadUnsale getInstance() {
+	public static LazyThreadUnsale getInstance() {
 		if (lazy == null) {
 			lazy = new LazyThreadUnsale();
 		}
