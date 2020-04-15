@@ -1,7 +1,7 @@
 package com.design.pattern.delegate.leader;
 
-import com.design.pattern.delegate.leader.target.DecoderM;
-import com.design.pattern.delegate.leader.target.EncoderM;
+import com.design.pattern.delegate.leader.targety.DecoderM;
+import com.design.pattern.delegate.leader.targety.EncoderM;
 
 /**
  * @ClassName Manager
